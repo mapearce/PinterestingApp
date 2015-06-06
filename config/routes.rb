@@ -1,4 +1,5 @@
 Portfolio::Application.routes.draw do
+  devise_for :users
   root 'pages#home'
   get 'wood' => 'pages#wood'
   get 'paper' => 'pages#paper'

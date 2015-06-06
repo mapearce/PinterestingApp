@@ -1,5 +1,10 @@
 <div class="jumbotron center">
 	<h1>How do you like my castle?</h1>
-	<p> If you'd like a look around, <%= link_to "sign up", "#", class: "btn btn-primary" %> today </p>
-	<p> Took a tour and now you're back? , <%= link_to "Log In!", "#", class: "btn btn-primary" %> </p>
+	
+	<% if user_signed_in? %>
+		# do something
+	<% else %>
+		<p> If you'd like a look around, <%= link_to "sign up", new_user_registration_path, class: "btn btn-primary" %> today </p>
+		<p> Took a tour and now you're back? , <%= link_to "Log In!", new_user_session_path, class: "btn btn-primary" %> </p>
+	<% end %>
 </div>
