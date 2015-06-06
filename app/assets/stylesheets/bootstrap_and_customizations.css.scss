@@ -1,7 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100);
+
+$font-family-sans-serif: 'Raleway';
+
 $body-bg: #2980b9;
 $jumbotron-bg: #2c3e50;
 $jumbotron-color: #ecf0f1;
 $navbar-inverse-bg: #16a085;
-$navbar-inverse-link-color: #9b59b6;
+$navbar-inverse-link-color: red;
+$navbar-inverse-brand-link-color: white;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight:bold;
+}
