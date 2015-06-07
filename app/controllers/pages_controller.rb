@@ -11,6 +11,4 @@ class PagesController < ApplicationController
   end
   def plastic
   end
-  def pins
-  end
 end
