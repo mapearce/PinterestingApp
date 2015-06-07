@@ -2,7 +2,7 @@
 	<h1>How do you like my castle?</h1>
 	
 	<% if user_signed_in? %>
-		# do something
+		Doing a little bit of one of the above each day
 	<% else %>
 		<p> If you'd like a look around, <%= link_to "sign up", new_user_registration_path, class: "btn btn-primary" %> today </p>
 		<p> Took a tour and now you're back? , <%= link_to "Log In!", new_user_session_path, class: "btn btn-primary" %> </p>
