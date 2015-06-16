@@ -2,7 +2,7 @@ Portfolio::Application.routes.draw do
   resources :pins
   
   devise_for :users
-  root 'pages#home'
+  root 'pins#index'
   get 'wood' => 'pages#wood'
   get 'paper' => 'pages#paper'
   get 'metal' => 'pages#metal'
