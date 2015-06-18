@@ -17,15 +17,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Wood", wood_path %></li>
+<!--        <li><%= link_to "Wood", wood_path %></li>
         <li><%= link_to "Plastic", plastic_path %></li>
         <li><%= link_to "Paper", paper_path %></li>
         <li><%= link_to "Metal", metal_path %></li>
-        <li><%= link_to "1s & 0s", oneszeroes_path %></li>
+        <li><%= link_to "1s & 0s", oneszeroes_path %></li>  -->
         
       </ul>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
       <ul class="nav navbar-nav navbar-right">
+        <% unless user_signed_in? %>
+          <%= link_to 'Log In!', new_user_session_path, class: "btn" %>
+        <% end %>
         <% if user_signed_in? %>
           <li><%= link_to 'New Pin', new_pin_path %></li>
           <li><%= link_to "Account Settings", edit_user_registration_path %></li>
